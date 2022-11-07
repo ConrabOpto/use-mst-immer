@@ -1,12 +1,12 @@
 {
-    "name": "use-mst-local",
+    "name": "use-mst-immer",
     "version": "0.1.0",
-    "description": "A hook to use mobx-state-tree as a React hook to manipulate local state.",
+    "description": "A mobx-state-tree powered use-immer.",
     "source": "src/index.ts",
-    "main": "dist/use-mst-local.js",
-    "exports": "./dist/use-mst-local.modern.js",
-    "module": "dist/use-mst-local.module.js",
-    "unpkg": "dist/use-mst-local.umd.js",
+    "main": "dist/use-mst-immer.js",
+    "exports": "./dist/use-mst-immer.modern.js",
+    "module": "dist/use-mst-immer.module.js",
+    "unpkg": "dist/use-mst-immer.umd.js",
     "types": "dist/index.d.ts",
     "scripts": {
         "build": "microbundle --tsconfig tsconfig.build.json --no-compress --external mobx,mobx-state-tree,react --jsx React.createElement",
@@ -15,7 +15,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/ConrabOpto/use-mst-local.git"
+        "url": "https://github.com/ConrabOpto/use-mst-immer.git"
     },
     "author": "Conrab Opto (www.conrabopto.se)",
     "license": "MIT",
@@ -23,9 +23,7 @@
         "dist"
     ],
     "devDependencies": {
-        "@testing-library/react": "^13.4.0",
         "@types/react": "^17.0.3",
-        "jsdom": "^20.0.1",
         "microbundle": "^0.15.0",
         "mobx": "6.6.1",
         "mobx-react": "7.5.2",
@@ -33,11 +31,12 @@
         "prettier": "^2.2.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "typescript": "^4.6.4",
+        "typescript": "4.7.4",
         "vitest": "^0.24.3"
     },
     "peerDependencies": {
         "mobx": "^6.0.0",
-        "mobx-state-tree": "^5.0.0"
+        "mobx-state-tree": "^5.0.0",
+        "react": "^16.8.0 || ^17.0.1 || ^18.0.0"
     }
 }
