@@ -1,6 +1,6 @@
 {
     "name": "use-mst-immer",
-    "version": "0.1.0",
+    "version": "0.2.1",
     "description": "A mobx-state-tree powered use-immer.",
     "source": "src/index.ts",
     "main": "dist/use-mst-immer.js",
